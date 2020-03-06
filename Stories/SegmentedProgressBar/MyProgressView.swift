@@ -28,11 +28,9 @@ class MyProgressView: UIView {
     var timer: Timer?
     
     private var paused = false
-    private var pausedTime: Float = 0.0
     
     init(arrayStories: Int) { // future arg: array of stories
         // init var here
-        
         super.init(frame: .zero)
         
         for _ in 0...arrayStories - 1 {
@@ -53,12 +51,12 @@ class MyProgressView: UIView {
         
         for (index, progressBar) in arrayBars.enumerated() {
             
-            let segFrame = CGRect(x: CGFloat(index) * (width + padding), y: 0, width: width, height: frame.height)
+            let segFrame = CGRect(x: CGFloat(index) * (width + padding), y: 0, width: width, height: 20)
             progressBar.frame = segFrame
             
             progressBar.progress = 0.0
             
-            progressBar.transform = progressBar.transform.scaledBy(x: 1, y: 3)
+            //progressBar.transform = progressBar.transform.scaledBy(x: 1, y: 3)
             
             progressBar.tintColor = .white
             progressBar.backgroundColor = UIColor.black
@@ -115,6 +113,12 @@ class MyProgressView: UIView {
         }
     }
     
+    func resetBar(index: Int) {
+        for i in arrayBars {
+            i.progress = 0.0
+            print("set to zero")
+        }
+    }
     
     
     func skip() {

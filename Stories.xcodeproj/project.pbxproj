@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DBCF0B802410D0440091EF2A /* StoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCF0B7F2410D0440091EF2A /* StoryCell.swift */; };
 		DBEEC484240E2D93006A4F19 /* StoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBEEC483240E2D93006A4F19 /* StoryViewController.swift */; };
 		DBEEC488240E4857006A4F19 /* StoryPreviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBEEC487240E4857006A4F19 /* StoryPreviewCell.swift */; };
 		DBEEC4B3240FB79E006A4F19 /* MyProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBEEC4B2240FB79E006A4F19 /* MyProgressView.swift */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DBCF0B7F2410D0440091EF2A /* StoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryCell.swift; sourceTree = "<group>"; };
 		DBEEC483240E2D93006A4F19 /* StoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryViewController.swift; sourceTree = "<group>"; };
 		DBEEC487240E4857006A4F19 /* StoryPreviewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryPreviewCell.swift; sourceTree = "<group>"; };
 		DBEEC4B2240FB79E006A4F19 /* MyProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProgressView.swift; sourceTree = "<group>"; };
@@ -65,6 +67,7 @@
 			children = (
 				DBEFF229240D986B00A4AD8C /* StoryPhotoCell.swift */,
 				DBEEC487240E4857006A4F19 /* StoryPreviewCell.swift */,
+				DBCF0B7F2410D0440091EF2A /* StoryCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -200,6 +203,7 @@
 				DBEEC488240E4857006A4F19 /* StoryPreviewCell.swift in Sources */,
 				DBEFF212240D861500A4AD8C /* SceneDelegate.swift in Sources */,
 				DBEFF228240D8C9200A4AD8C /* StoryCellModel.swift in Sources */,
+				DBCF0B802410D0440091EF2A /* StoryCell.swift in Sources */,
 				DBEEC484240E2D93006A4F19 /* StoryViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -13,7 +13,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
     
     var arrayDemoHomeImages = ["logo0", "logo1", "logo2", "logo3", "logo4"]
-    var arrayDemoPreviewImages = ["image0", "image1", "image2", "image3", "image4",]
+    var arrayDemoPreviewImages = [["image0", "image1"], ["image2", "image3"], ["image4","image0"], ["image1", "image2"], ["image3","image4"]]
     
     var TEST_DATA_COUNT = 5
     
@@ -33,7 +33,6 @@ class ViewController: UIViewController {
         collectionView.delegate = self
         collectionView.dataSource = self
         
-        print("screen h = \(screenHeight) , w = \(screenWidth)")
         collectionView.frame = CGRect(x: 0, y: 50, width: screenWidth, height: screenHeight * 0.15)
         
         //demo create data
@@ -69,10 +68,6 @@ extension ViewController: UICollectionViewDataSource{
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cellStory", for: indexPath) as! StoryPhotoCell
         
-//        cell.imageView.layer.borderColor = UIColor.orange.cgColor
-//        cell.imageView.layer.borderWidth = 1
-//        cell.imageView.backgroundColor = UIColor.orange
-        
         let height = collectionView.frame.height
         let width = height * 0.7
         
@@ -85,7 +80,7 @@ extension ViewController: UICollectionViewDataSource{
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        print(indexPath.section)
+        print("Home: index selected = \(indexPath.section)")
     }
 }
 

@@ -9,9 +9,9 @@
 import UIKit
 
 class StoryPreviewCellModel: NSObject {
-    var story: String
+    var story: [String]
     
-    init(story: String) {
+    init(story: [String]) {
         self.story = story
     }
 }
